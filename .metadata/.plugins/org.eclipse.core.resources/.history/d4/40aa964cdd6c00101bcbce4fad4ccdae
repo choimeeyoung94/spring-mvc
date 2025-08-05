@@ -1,0 +1,13 @@
+package org.shark.di.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Component
+public class DIDaoImplements implements DIDao {
+
+  @Override
+  public void daoMethod() {
+    System.out.println("daoMethod()");
+  }
+
+}

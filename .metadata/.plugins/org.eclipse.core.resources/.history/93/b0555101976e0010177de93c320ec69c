@@ -1,0 +1,18 @@
+package org.shark.crud.repository;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.stereotype.Repository;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Repository
+public class BoardDAO {
+    
+  private final SqlSessionTemplate template;
+  
+  public List<BoardDTO> getBoards() {
+    
+  }
+  
+}

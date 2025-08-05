@@ -1,0 +1,19 @@
+package org.shark.di;
+
+import org.shark.di.service.DIServcieImpl;
+import org.shark.di.service.DIService;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MainController {
+  
+  private DIService diService = new DIServcieImpl();
+  
+  @RequestMapping(value = "/")
+  public String main() {
+    diService.serviceMethod();
+    return "main";
+  }
+  
+}

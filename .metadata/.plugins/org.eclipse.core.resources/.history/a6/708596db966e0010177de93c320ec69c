@@ -1,0 +1,9 @@
+package org.shark.crud.repository;
+
+public class BoardDAO {
+  
+  private final SqlSessionTemplate template;
+  
+  
+  
+}

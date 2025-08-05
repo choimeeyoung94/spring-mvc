@@ -1,0 +1,16 @@
+package org.shark.IoC.chap03_component;
+
+import org.springframework.stereotype.Component;
+
+import lombok.Getter;
+
+@Component
+@Getter
+public class Calculator {
+  private String brand = "삼성";
+  private int price = 20000;
+  private Adder adder = new Adder();
+  private Divider divider = new Divider();
+  private Multiplier multipler = new Multiplier();
+  private Subtractor subtractor = new Subtractor();
+}

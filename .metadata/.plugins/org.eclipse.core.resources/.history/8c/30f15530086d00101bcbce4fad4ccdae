@@ -1,0 +1,14 @@
+package org.shark.mvc.controller;
+
+import org.springframework.stereotype.Controller;
+
+@RequestMapping("/b")
+@Controller
+public class MvcControllerB {
+  
+  
+  
+  
+  
+  
+}

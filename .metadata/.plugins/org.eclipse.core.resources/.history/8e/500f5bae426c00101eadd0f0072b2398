@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <!-- Bean 등록하기 (Spring Container에 저장된다) -->
+  <bean id="adder" class="org.shark.IoC.ex01.Adder"/>
+  <bean id="sub" class="org.shark.IoC.ex01.Subtractor"/>
+  <bean id="mul" class="org.shark.IoC.ex01.Multiplier"/>
+  <bean id="div" class="org.shark.IoC.ex01.Divider"/>
+  
+  <!-- Setter 이용해서 Bean 등록하기 -->
+  <bean id="calc1"  class="org.shark.IoC.ex01.Calculator">
+    <property name="brand" value="샤프"/>
+    <property name="price" value="10000"/>
+    <property name="adder" ref="adder"/>
+    <property name="subtractor" ref="sub"/>
+    <property name="multipler" ref="mul"/>
+    <property name="divider" ref="div"/>
+  </bean>
+  
+  <!-- Constructor 이용해서 Bean 등록하기 (매개변수 순서대로 값을 전달해야 한다) -->
+  <bean id="calc2" class="org.shark.IoC.ex01.Calculator">
+    <constructor-arg value="필립스"/>
+    <constructor-arg value="20000"/>
+    <constructor-arg ref="add"/>
+    <constructor-arg ref="sub"/>
+    <constructor-arg ref="arg"/>
+  </bean>
+  
+</beans>

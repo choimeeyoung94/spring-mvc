@@ -1,0 +1,25 @@
+package org.shark.IoC.chap02_java;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/*
+ * @Configuration
+ * 
+ * 1. 클래스 레벨 어노테이션으로, 해당 클래스가 스프링 빈 설정 소스임을 나타낸다 (나는 Spring Bean Configuration File입니다.)
+ * 2. @Bean 어노테이션이 추가된 메소드들이 빈을 생성하는 팩토리 역할을 수행한다
+ * 
+ * */
+
+
+
+@Configuration
+public class AppConfig {
+  
+  @Bean
+  public Adder add() {
+    return new Adder();
+  } 
+  
+  
+}

@@ -1,0 +1,30 @@
+package org.shark.di.service;
+
+import org.shark.di.dao.DIDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+/*
+ * @Service
+ * 
+ * 1. 비즈니스 로직을 담당하는 클래스임을 명확히 나타내는 어노테이션 이다
+ * 2. 컨트롤러(@Controller)와 레파지토리(@Repository) 사이에서 핵심 비즈니스 로직을 구현하는 역할을 한다
+ * 3. @Component의 특수화 된 어노테이션으로 Spring Container에 자동으로 빈으로 등록된다
+ * 
+ * */
+
+
+@Service
+public class DIServcieImpl implements DIService {
+
+  @Autowired
+  private final DIDao didao;
+  
+  @Override
+  public void serviceMethod() {
+    System.out.println("serviceMethod()");
+    didao.daoMethod();
+    
+  }
+
+}

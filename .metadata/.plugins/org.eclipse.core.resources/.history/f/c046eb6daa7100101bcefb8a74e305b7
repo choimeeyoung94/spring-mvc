@@ -1,0 +1,7 @@
+package org.shark.crud.filter;
+
+import javax.servlet.http.HttpServletRequestWrapper;
+
+public class XSSRequestWrapper extends HttpServletRequestWrapper {
+
+}

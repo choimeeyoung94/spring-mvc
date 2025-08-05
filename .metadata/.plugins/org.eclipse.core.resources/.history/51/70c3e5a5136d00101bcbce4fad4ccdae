@@ -1,0 +1,7 @@
+package org.shark.mvc.model.dto;
+
+public class BoardDTO {
+  private String title;
+  private int hit;
+  
+}

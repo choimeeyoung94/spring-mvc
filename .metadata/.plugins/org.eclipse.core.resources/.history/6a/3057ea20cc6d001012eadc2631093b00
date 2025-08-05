@@ -1,0 +1,15 @@
+package org.shark.mvc.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("/d")
+@Controller
+public class MvcControllerD {
+  
+  @RequestMapping("/list")
+  public String methodA() {
+    return "d/list";
+  }
+  
+}

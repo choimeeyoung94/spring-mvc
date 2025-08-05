@@ -1,0 +1,5 @@
+package org.shark.async;
+
+public class AsyncController {
+
+}

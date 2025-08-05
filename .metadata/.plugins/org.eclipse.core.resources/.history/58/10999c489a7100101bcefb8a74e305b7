@@ -1,0 +1,38 @@
+package org.shark.crud.service;
+
+import org.shark.crud.model.dto.UserDTO;
+import org.shark.crud.repository.UserDAO;
+import org.shark.crud.util.SecureUtil;
+import org.springframework.stereotype.Service;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class UserServiceImpl implements UserService {
+
+  private final UserDAO userDAO;
+  private final SecureUtil secureUtil;
+  
+  @Override
+  public UserDTO findUserByEmailAndPassword(UserDTO user) {
+    return userDAO.getUser(user);
+  }
+
+  @Override
+  public UserDTO findUserByNickname(String nickname) {
+    return userDAO.getUserByNickname(nickname);
+  }
+
+  @Override
+  public boolean signUp(UserDTO user) {
+    // salt 생성
+    byte[] salt = secureUtil.getSalt();
+    
+    
+    
+    
+    
+    return false;
+  }
+}

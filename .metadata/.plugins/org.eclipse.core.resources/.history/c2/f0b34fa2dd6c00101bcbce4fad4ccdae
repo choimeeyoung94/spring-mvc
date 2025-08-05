@@ -1,0 +1,19 @@
+package org.shark.di.service;
+
+import org.shark.di.dao.DIDao;
+import org.springframework.stereotype.Component;
+
+@Component
+public class DIServcieImpl implements DIService {
+
+  @Autowired
+  private DIDao didao;
+  
+  @Override
+  public void serviceMethod() {
+    System.out.println("serviceMethod()");
+    didao.daoMethod();
+    
+  }
+
+}

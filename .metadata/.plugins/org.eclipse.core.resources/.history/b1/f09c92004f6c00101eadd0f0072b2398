@@ -1,0 +1,15 @@
+package org.shark.IoC.chap03_component;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Component
+@Getter
+public class Calculator {
+  private String brand;
+  private int price;
+  private Adder adder;
+  private Divider divider;
+  private Multiplier multipler;
+  private Subtractor subtractor;
+}

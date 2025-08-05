@@ -1,0 +1,13 @@
+package org.shark.crud.service;
+
+import org.shark.crud.model.dto.UserDTO;
+
+public class UserServiceImpl implements UserService {
+
+  @Override
+  public UserDTO findUserByEmailAndPassword(UserDTO user) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+}

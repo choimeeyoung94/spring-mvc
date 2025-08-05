@@ -1,0 +1,30 @@
+package org.shark.mvc.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("/b")
+@Controller
+public class MvcControllerB {
+  
+  @RequestMapping("/list")
+  public String methodA(HttpServletRequest request) {
+    String sort = request.getParameter("sort");
+    int page = 1;
+    
+    if (sort == null || !(sort.equalsIgnoreCase("ASC") || sort.equalsIgnoreCase("DESC"))) {
+      sort = "DESC";
+    }
+    
+    
+    
+    return "b/list";
+  }
+  
+  
+  
+  
+  
+}

@@ -1,0 +1,29 @@
+package org.shark.IoC.chap03_component;
+
+import org.springframework.stereotype.Component;
+
+import lombok.Getter;
+
+/*
+ * @Component
+ * 
+ * 1. 클래스 레벨 어노테이션으로 해당 클래스를 Spring Container에 빈(bean)으로 등록하는 역할을 한다
+ * 2. 스프링 컴포넌트 스캔(Component Scan) 기능이 활성화 되어 있어야 한다 (servlet-context.xml 참조)
+ * 3. XML의 <bean> 태그나 Configuration 파일의 @Bean 어노테이션을 이용해 수동으로 등록하던 방식을 자동 등록으로 보완한 방식이다
+ * 4. 빈(bean)의 이름은 클래스 이름을 camelCase로 바꾼 형태가 된다
+ *    @Component(value = "beanId") 형식으로 빈의 이름을 지정할 수 있다
+ * 5. 
+ * */
+
+
+
+@Component
+@Getter
+public class Calculator {
+  private String brand = "삼성";
+  private int price = 20000;
+  private Adder adder = new Adder();
+  private Divider divider = new Divider();
+  private Multiplier multipler = new Multiplier();
+  private Subtractor subtractor = new Subtractor();
+}

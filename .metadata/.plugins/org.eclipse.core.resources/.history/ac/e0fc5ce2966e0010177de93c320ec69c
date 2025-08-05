@@ -1,0 +1,11 @@
+package org.shark.crud.repository;
+
+import org.mybatis.spring.SqlSessionTemplate;
+
+public class BoardDAO {
+  
+  private final SqlSessionTemplate template;
+  
+  
+  
+}

@@ -1,0 +1,30 @@
+package org.shark.crud.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.shark.crud.service.UserService;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import lombok.RequiredArgsConstructor;
+
+@RequestMapping("/user")
+@RequiredArgsConstructor
+@Controller
+public class UserController {
+  
+  private final UserService userService;
+  
+
+  @GetMapping("/login")
+  public String loginForm(String url
+                         , Model model ) {
+    model.addAttribute("url", url); // 로그인 페이지 url을 전달
+    return "user/login"; // user 폴더 아래 login.jsp로 forward 한다
+    
+                      
+    
+  }
+}

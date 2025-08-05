@@ -1,0 +1,9 @@
+package org.shark.mvc.model.dto;
+
+import java.util.List;
+
+public class BoardList {
+  
+  private List<BoardDTO> boards;
+  
+}

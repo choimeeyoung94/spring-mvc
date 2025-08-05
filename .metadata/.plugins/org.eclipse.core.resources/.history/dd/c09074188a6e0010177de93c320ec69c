@@ -1,0 +1,9 @@
+package org.shark.crud.model.dto;
+
+public class UserDTO {
+  private int uid;
+  private String email;
+  private String password;
+  private String nickname;
+  
+}

@@ -1,0 +1,5 @@
+package org.shark.IoC.chap02_java;
+
+public class AppConfig {
+
+}

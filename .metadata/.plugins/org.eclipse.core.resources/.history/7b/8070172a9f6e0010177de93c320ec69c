@@ -1,0 +1,12 @@
+package org.shark.crud.service;
+
+import java.util.List;
+
+import org.shark.crud.model.dto.BoardDTO;
+
+public interface BoardService {
+  List<BoardDTO> findAllBoards();
+  BoardDTO findBoardById(int bid);
+  boolean addBoard(BoardDTO board);
+  boolean modifyBoard(BoardDTO board);
+}

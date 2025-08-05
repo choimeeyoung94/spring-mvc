@@ -1,0 +1,5 @@
+package org.shark.crud.interceptor;
+
+public class LoginCheckInterceptor {
+
+}

@@ -1,0 +1,83 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+</head>
+<body>
+  <h1>fetch() 함수를 이용한 비동기 요청</h1>
+  
+  <button onclick="getJson2()">getJson</button>
+  <br>
+  <div id="get-json"></div>
+  
+  <script type="text/javascript">
+  	
+  	/*1. fetch() 함수와 then() 메소드*/
+  
+  	function getJson() {
+  	  fetch("${contextPath}/a/list") // fetch("${contextPath}/a/list.json") 
+  	  	.then(response => response.json())
+  	  	.then(jsonData => {
+  	  	  console.log(jsonData);
+  	  	  //document.getElementById("get-json").textContent = jsonData.length
+  	  	})
+  	}
+  
+  	/* 2. fetch() 함수와 async 함수 */
+  	function getJson2() {
+  	  getBoards();  	  
+  	}
+  	
+  	async function getBoards() { // 2. 본문에 await 키워드가 포함되기 위해서는 반드시 함수가 asynce 함수여야 한다
+  		const response =  await fetch("${contextPath}/b/list"); // 1. fetch() 함수의 반환값은 프로미스이므로, await을 추가하여 프로미스에 저장된 값을 꺼낸다
+  		const jsonData =  await response.json();
+  		console.log(response);
+  		console.log(jsonData);
+  		document.getElementById("get-json").textContent = jsonData.length
+  	}
+  	
+  	
+  	
+  
+  </script>
+  
+  <hr>
+  
+  <button onclick="getXml2()">getXml</button>
+  <br>
+  <div id="get-xml">
+  </div>
+  
+  <script type="text/javascript">
+  	function getXml() {
+  	  fetch("${contextPath}/a/list.xml")
+  	  	.then(response => response.text())
+  	  	.then(xmlStr =>{ 
+  	  	  const parser = new DOMParser();
+  	  	  const xmlDoc = parser.parseFromString(xmlStr, "application/xml");
+  	  	  console.log(xmlDoc);
+  	  	  console.log(xmlDoc.querySelectorAll("item"));
+  	  	  document.getElementById("get-xml").textContent = xmlDoc.querySelector("item").textContent;
+  	  	})
+  	}
+  	
+  async	function getXml2() {
+  	  const response = await fetch("${contextPath}/a/list.xml")
+  	  	const xmlData = await response.text();
+  	  	console.log(xmlData);
+  	  	 document.getElementById("get-xml").textContent = xmlData.textContent;
+  	}
+  	
+  	
+  
+  </script>
+  
+  
+</body>
+</html>

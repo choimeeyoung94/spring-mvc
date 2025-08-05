@@ -1,0 +1,15 @@
+package org.shark.IoC.ex01;
+
+public class Main {
+  public static void main(String[] args) {
+    
+    // XML을 이용해 등록한 빈 관리는 GenericXMLApplicationContext 클래스를 이용한다
+    
+    
+    
+    
+    
+    
+    
+  }
+}

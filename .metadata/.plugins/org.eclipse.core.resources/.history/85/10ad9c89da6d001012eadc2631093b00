@@ -1,0 +1,22 @@
+package org.shark.async;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("/a")
+@Controller
+public class AsyncControllerA {
+  
+  @RequestMapping(value = {"/list","/list.json"})
+  public void methodA() {
+    
+  }
+  
+  @RequestMapping(value = "/list.xml")
+  public void methodA() {
+    
+  }
+  
+  
+  
+}

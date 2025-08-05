@@ -1,0 +1,5 @@
+package org.shark.IoC.ex01;
+
+public class Subtractor {
+  
+}

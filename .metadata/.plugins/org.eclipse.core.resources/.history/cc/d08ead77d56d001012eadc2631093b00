@@ -1,0 +1,29 @@
+package org.shark.mvc.model.dto;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Getter
+public class BoardList {
+  
+  private List<BoardDTO> boards;
+  
+  public BoardList() {
+    boards = new ArrayList<BoardDTO>();
+    
+  }
+  
+  public void add(BoardDTO board) {
+    boards.add(board);
+  }
+  
+  
+  
+  @Override
+  public String toString() {
+    return "" + boards;
+  }
+  
+  
+  
+}

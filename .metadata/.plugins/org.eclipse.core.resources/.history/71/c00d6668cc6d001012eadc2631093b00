@@ -1,0 +1,23 @@
+package org.shark.mvc.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("/d")
+@Controller
+public class MvcControllerD {
+  
+  @ModelAttribute("boards")
+  
+  
+  @RequestMapping("/list")
+  public String methodA() {
+    return "d/list";
+  }
+  
+  @RequestMapping("/detail")
+  public String methodB() {
+    return "d/detail";
+  }
+}
