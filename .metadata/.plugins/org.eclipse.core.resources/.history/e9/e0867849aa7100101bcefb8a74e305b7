@@ -1,8 +1,0 @@
-package org.shark.crud.filter;
-
-import org.springframework.stereotype.Component;
-
-@Component
-public class XSSFilter implements Filter{
-
-}

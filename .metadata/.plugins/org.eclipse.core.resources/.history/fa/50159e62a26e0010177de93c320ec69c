@@ -1,5 +1,0 @@
-package org.shark.crud.service;
-
-public interface UserService {
-  
-}

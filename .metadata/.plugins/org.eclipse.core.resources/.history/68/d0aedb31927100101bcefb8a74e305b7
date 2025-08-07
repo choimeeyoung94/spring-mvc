@@ -1,5 +1,0 @@
-package org.shark.crud.util;
-
-public class SecureUtil {
-
-}

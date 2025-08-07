@@ -1,5 +1,0 @@
-package org.shark.crud.filter;
-
-public class XSSRequestWrapper {
-
-}

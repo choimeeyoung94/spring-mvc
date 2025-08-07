@@ -1,5 +1,0 @@
-package org.shark.crud.interceptor;
-
-public class LoginCheckInterceptor implements HandlerInterceptor{
-  
-}
