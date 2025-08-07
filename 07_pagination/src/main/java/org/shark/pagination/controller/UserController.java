@@ -17,7 +17,11 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @Controller
 public class UserController {
+<<<<<<< HEAD
  private final UserService userService;
+=======
+  private final UserService userService;
+>>>>>>> 62be30bf0bc79d0f820073899e6d97316f2a6482
   
   @GetMapping("/list")
   public String list(PageDTO dto, 
