@@ -68,6 +68,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\dev\spring\spring-mvc"/>
 			<item value="D:\dev\Spring\project"/>
 			<item value="D:\dev\project"/>
 			<item value="D:\dev\Spring\01_IoC"/>
