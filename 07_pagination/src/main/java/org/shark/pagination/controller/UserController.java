@@ -13,16 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import lombok.RequiredArgsConstructor;
 
-@RequestMapping("/user")
 @RequiredArgsConstructor
+@RequestMapping("/user")
 @Controller
 public class UserController {
-<<<<<<< HEAD
  private final UserService userService;
-=======
-  private final UserService userService;
->>>>>>> 62be30bf0bc79d0f820073899e6d97316f2a6482
-  
+   
   @GetMapping("/list")
   public String list(PageDTO dto, 
                       HttpServletRequest request, 

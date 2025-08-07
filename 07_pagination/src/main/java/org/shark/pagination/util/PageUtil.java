@@ -50,14 +50,6 @@ public class PageUtil {
        }
        queryString = queryStringBuilder.toString();
      }
-<<<<<<< HEAD
-   
-     return queryString;
-   }
-   
-   
-=======
->>>>>>> 62be30bf0bc79d0f820073899e6d97316f2a6482
    
      return queryString;
    }   
