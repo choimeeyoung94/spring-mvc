@@ -1,5 +1,7 @@
 package org.shark.pagination.util;
 
+import java.util.Map;
+
 import org.shark.pagination.model.dto.PageDTO;
 import org.springframework.stereotype.Component;
 
@@ -35,10 +37,20 @@ public class PageUtil {
     * 
     * 
     * */
-   public String getPaginHtml() {
-     return null;
-   }
+   public String getPaginHtml(PageDTO dto, String requestURL, Map<String,Object> params) {
+     // 쿼리 스트링 만들기
+     String queryString = "";
+     if (params != null) {
+       StringBuilder queryStringBuilder = new StringBuilder();
+       for (Map.Entry<String, Object> entry : params.entrySet()) {
+         queryStringBuilder.append("&");
+         queryStringBuilder.append(entry.getKey());
+         queryStringBuilder.append("=");
+         queryStringBuilder.append(entry.getValue());
+       }
+       queryString = queryStringBuilder.toString();
+     }
    
-   
-   
+     return queryString;
+   }   
 }
