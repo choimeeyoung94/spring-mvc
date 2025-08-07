@@ -1,5 +1,0 @@
-package org.shark.di.dao;
-
-public class DIDaoImplements implements DIDao {
-
-}

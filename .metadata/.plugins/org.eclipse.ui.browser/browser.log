@@ -35,3 +35,29 @@
 7월 30, 2025 14:45:58.618 [14288:6440:0730/144558.615:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
 7월 30, 2025 14:51:25.908 [14288:6440:0730/145125.908:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
 7월 30, 2025 16:35:39.993 [14288:21220:0730/163539.991:ERROR:google_apis\gcm\engine\connection_factory_impl.cc:483] ConnectionHandler failed with net error: -2
+
+8월 06, 2025 09:32:19.79 NEW SESSION
+8월 06, 2025 09:32:19.80 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+8월 06, 2025 09:32:19.85 I0000 00:00:1754440339.078755   19804 voice_transcription.cc:58] Registering VoiceTranscriptionCapability
+8월 06, 2025 09:32:19.171 [15080:7848:0806/093219.170:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+8월 06, 2025 09:32:19.477 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 06, 2025 09:32:45.896 [15080:7848:0806/093245.896:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: QUOTA_EXCEEDED
+8월 06, 2025 09:37:59.323 [15080:22460:0806/093759.323:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 06, 2025 10:02:57.785 [15080:22460:0806/100257.785:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 06, 2025 10:06:54.868 [15080:22460:0806/100654.867:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 06, 2025 10:12:41.672 [15080:22460:0806/101241.672:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 06, 2025 10:28:02.656 [15080:22460:0806/102802.656:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 06, 2025 10:33:41.345 [15080:22460:0806/103341.345:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 06, 2025 12:10:59.399 [15080:22460:0806/121059.398:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 06, 2025 13:23:40.415 [15080:22460:0806/132340.414:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 06, 2025 13:24:42.608 [15080:22460:0806/132442.607:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 06, 2025 13:51:28.660 [15080:22460:0806/135128.660:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 06, 2025 14:49:13.51 [15080:22460:0806/144913.050:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 06, 2025 17:55:46.137 [15080:22460:0806/175546.136:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 06, 2025 19:03:19.41 [15080:22460:0806/190319.041:ERROR:mojo\public\cpp\bindings\lib\interface_endpoint_client.cc:732] Message 1 rejected by interface blink.mojom.WidgetHost
+
+8월 07, 2025 10:47:46.213 NEW SESSION
+8월 07, 2025 10:47:46.213 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+8월 07, 2025 10:47:46.219 I0000 00:00:1754531266.213102   15168 voice_transcription.cc:58] Registering VoiceTranscriptionCapability
+8월 07, 2025 10:47:46.249 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 07, 2025 10:47:46.380 [18248:16152:0807/104746.380:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: QUOTA_EXCEEDED

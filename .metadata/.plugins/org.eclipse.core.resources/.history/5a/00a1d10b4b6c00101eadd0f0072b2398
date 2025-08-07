@@ -1,8 +1,0 @@
-package org.shark.IoC.chap02_java;
-
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
-public class AppConfig {
-  
-}

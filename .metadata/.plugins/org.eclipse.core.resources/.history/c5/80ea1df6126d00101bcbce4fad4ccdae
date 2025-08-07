@@ -1,5 +1,0 @@
-package org.shark.mvc.model.dto;
-
-public class BoardDTO {
-
-}

@@ -1,6 +1,0 @@
-package org.shark.mvc.controller;
-
-@Controller
-public class MvcControllerB {
-
-}
